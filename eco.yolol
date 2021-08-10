@@ -1,0 +1,19 @@
+b=:SBP IF :ECO<1 THEN GOTO3 END GOTO2
+c=(c<1)*(b<7000)+c*(b<9999) :FCURL=c*(40)+0.001 GOTO1
+:FCURL=60+(10000-b)/120 GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

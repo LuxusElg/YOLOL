@@ -1,0 +1,2 @@
+FuelStatus="\n1"+f1+d+"2"+f2+n+"3: "
+FuelStatus="\n1"+f1+"% 2"+f2+"%\n3: "

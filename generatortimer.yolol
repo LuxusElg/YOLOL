@@ -1,0 +1,7 @@
+f1=:fc1fuel p1=:gnsr fdesc="\nPropTime:\n" x=-1 y="INF" i=0
+IFi++<5THENGOTO2END f2=:fc1fuel p2=:gnsr fr3=fr2 fr2=fr pr3=pr2 pr2=pr
+fr=(f1-f2) IFfr<1THENftl=x GOTO4END ftl=f2/((fr+fr2+fr3)/3) pr=(p1-p2)
+IFpr<1THENptl=x GOTO5END ptl=p2/((pr+pr2+pr3)/3) s=ftl%60
+IFftl<0THENftl=y ELSEm=(ftl/60)%60 h=ftl/3600 ftl+=h+":"+m+":"+s END
+IF ptl<0 THEN ptl=y ELSE ptl+="s" END
+:GenTime=ftl+fdesc+ptl GOTO1

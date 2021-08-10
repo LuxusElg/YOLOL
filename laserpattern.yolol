@@ -1,0 +1,2 @@
+dir=1 goto :lpat+1
+:ltp+=(5*dir) if :ltp>60 OR :ltp<10 then dir*=-1 end goto :lpat+1

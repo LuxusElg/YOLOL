@@ -1,0 +1,3 @@
+// tricks
+x/=:toggle // break when toggle==0
+goto :toggle+1 // skip first line when toggle is on

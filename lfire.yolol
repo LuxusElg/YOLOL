@@ -1,0 +1,19 @@
+:lfire=0 IF :lasers<1 THEN GOTO1 END IF :range>0 THEN GOTO3 END
+IF :lsf>0 THEN :lfire=1 END i=0 GOTO4
+IF :rfdist<18 AND :lsf>0 THEN :lfire=1 i=0 GOTO4 END GOTO1
+IF :lasers<1 THEN GOTO1 END IF i++<:prt THEN GOTO4 END i=0 :lfire=0
+IF :lasers<1 THEN GOTO1 END IF i++<:prt/2 THEN GOTO5 END GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+

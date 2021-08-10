@@ -1,0 +1,10 @@
+IFi%2THEN f1=f2 f2=:fsum p1=p2 p2=:gnsr END
+fr=(f1-f2+1)/4 pr=(p1-p2+1)/4 :frate=fr :fread1=f1 :fread2=f2
+ft=(fr>1)*(f2/(fr/4)) pt=(fr>0)*(p2/(pr/4)) :ftime=ft
+h=ft/3600 h=h-h%1 m=(ft/60)%60 m=m-m%1 s=ft%60 s=s-s%1
+IFh<10THENh="0"+h END IFm<10THENm="0"+m END IFs<10THENs="0"+s END
+IFfr<1THENfts="INF"ELSE IFf2<1THENfts=z ELSEfts=h+":"+m+":"+s END END
+h=pt/3600 h=h-h%1 m=(pt/60)%60 m=m-m%1 s=pt%60 s=s-s%1
+IFh<10THENh="0"+h END IFm<10THENm="0"+m END IFs<10THENs="0"+s END
+IFpr<1THENpts="INF"ELSE IFp2<1THENpts=z ELSEpts=h+":"+m+":"+s END END
+pm="\nPropTime:\n" z="00:00:00" :FuelTime=fts+pm+pts i++ GOTO1

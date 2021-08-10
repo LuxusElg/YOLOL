@@ -1,0 +1,2 @@
+prev=cur cur=:fsum cycle=5 i=0
+IF i<((cycle*5)-1) THEN i++ GOTO2 END :frate=(prev-cur)/cycle GOTO1

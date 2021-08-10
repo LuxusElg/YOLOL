@@ -1,0 +1,19 @@
+:ShipStatus="\nWarpClass: "+:wclass+"\nErrors: "+:derrors f=:fsum
+c=:fcap :falert=(f<c*3) :palert=(:propellant<:pmax/3) h=100 f1=:f1/c*h
+f2=:f2/c*h f3=:f3/c*h f4=:f4/c*h f5=:f5/c*h f6=:f6/c*h f7=:f7/c*h
+f8=:f8/c*h f9=:f9/c*h f10=:f10/c*h n="%\n"
+fs="  L  |  R\n"+f1+"%|"+f2+n+f3+"%|"+f4+n+f5+"%|"+f6+n
+fs+=f7+"%|"+f8+n+f9+"%|"+f10+n :FuelStatus=fs GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+x=5.28 z=2.4 IF :range<1 THEN GOTO1 END
+p=ATAN (x/(z+:rfdist)) p-=(p>45)*(p-45) :trpitch=-p GOTO 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+fr=f1-f2 f2=f1 f1=:fsum p2=p1 p1=:gnsr ftime=f2/fr pm="\nPropTime:\n"
+h=ftime/3600 h=h-h%1 m=(ftime/60)%60 m=m-m%1 s=ftime%60 s=s-s%1
+IFfr<1THENfts="INF"ELSEfts=h+":"+m+":"+s END 
+h=ptime/3600 h=h-h%1 m=(ptime/60)%60 m=m-m%1 s=ptime%60 s=s-s%1
+IFpr<1THENpts="INF"ELSEpts=h+":"+m+":"+s END :FuelTime=n+fts+pm+pts
+f2=:fc1fuel p2=:gnsr pr=p1-p2 ptime=p2/pr GOTO1

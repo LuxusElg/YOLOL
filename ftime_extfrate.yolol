@@ -1,0 +1,9 @@
+ft=(:frate>1)*(:fsum/:frate) :ftime=ft fr=:frate fs=:fsum
+h=ft/3600 h=h-h%1 m=(ft/60)%60 m=m-m%1 s=ft%60 s=s-s%1
+IFh<10THENh="0"+h END IFm<10THENm="0"+m END IFs<10THENs="0"+s END
+IFfr<1THENfts="INF"ELSE IFfs<1THENfts=z ELSEfts=h+":"+m+":"+s END END
+pt=(:prate>1)*(:gnsr/:prate) :ptime=pt pr=:prate ps=:gnsr
+h=pt/3600 h=h-h%1 m=(pt/60)%60 m=m-m%1 s=pt%60 s=s-s%1
+IFh<10THENh="0"+h END IFm<10THENm="0"+m END IFs<10THENs="0"+s END
+IFpr<1THENpts="INF"ELSE IFps<1THENpts=z ELSEpts=h+":"+m+":"+s END END
+pm="\nPropTime:\n" z="00:00:00" :FuelTime=fts+pm+pts GOTO1
