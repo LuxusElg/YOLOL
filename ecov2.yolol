@@ -1,0 +1,19 @@
+c=10000 h=100 el=60
+b=:SBP l=(c-b)/(h+h*:ECO) l+=(:ECO<1)*(l<el)*(el-l) :FCURL=l GOTO2
+// :SBP - StoredBatteryPower from one battery
+// :ECO - Button/toggle
+// :FCURL - FuelChamberUnitRateLimit for all FCs
+// Modify el var to set minimum FCURL limit for non-eco mode
+
+
+
+
+
+
+
+
+
+
+
+
+
