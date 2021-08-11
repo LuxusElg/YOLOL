@@ -1,0 +1,10 @@
+:lfire=0 :rfire=0 IF:range THENGOTO7 END
+IF(:laser*:lsf)<1 THENGOTO1 END :lfire=1 :rfire=0
+
+IF(:laser*:lsf)<1 THENGOTO1 END :lfire=0 :rfire=1 
+IF:range THENGOTO7 END GOTO2
+// Rangefinder on:
+IF(:laser*:lsf*(:rfdist<18))<1 THENGOTO1 END :lfire=1 :rfire=0 
+
+IF(:laser*:lsf*(:rfdist<18))<1 THENGOTO1 END :lfire=0 :rfire=1 
+IF:range<1 THENGOTO2 END GOTO7
