@@ -1,5 +1,5 @@
 c=10000 h=100 e=100 m=60
-b=:SBP l=(c-b)/(h+e*:ECO) l+=(:ECO<1)*(l<m)*(m-l) :FCURL=l GOTO2
+b=:SBP l=(c-b)/(h+e*:ECO) l+=(:ECO<1)*(l<m)*(m-l) :FCURL=l+0.001 GOTO2
 // :SBP - StoredBatteryPower from one battery
 // :ECO - Button/toggle
 // :FCURL - FuelChamberUnitRateLimit for all FCs

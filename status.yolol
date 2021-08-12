@@ -1,5 +1,6 @@
-c=300000 f=:fsum :falert=(f/c*3) :palert=(:gnsr<:pmax/3) h=100 n="%\n"
+c=300000 :falert=(:fsum<c) :palert=(:gnsr<:pmax/4) h=100 n="%\n"
 f1=:f1/c*h f2=:f2/c*h f3=:f3/c*h f4=:f4/c*h fs="Rods: \n"+f1+"%|"+f2+n
-fs+=f3+"%|"+f4+n t="\nPonder: " cr="\nCruise: " e="\nEco: " ct=:cruise
-IF:trsp THENts="On" ELSEts="Off"END IF:eco THENes="On" ELSEes="Off"END
-IFct<1 THENcs="On" ELSEcs="Off"END :status=cr+cs+e+es+t+ts+"\n"+fs
+fs+=f3+"%|"+f4+n wc=:wcls IF:flowin THENin="IN " ELSEin="" end
+IF:flowout THENout="OUT" ELSEout="" END
+:status="\nWarpClass: "+wc+"Flow: "+fls+"\n"+fs GOTO1
+// general ship systems status
