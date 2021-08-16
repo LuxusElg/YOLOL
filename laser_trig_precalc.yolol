@@ -1,0 +1,23 @@
+if:range<1 THEN GOTO1 END GOTO:rfdist+(1-:rfdist%1)
+:tpitch=48.959 GOTO1
+:tpitch=54.023 GOTO1
+:tpitch=58.097 GOTO1
+:tpitch=61.414 GOTO1
+:tpitch=64.150 GOTO1
+:tpitch=66.436 GOTO1
+:tpitch=68.369 GOTO1
+:tpitch=70.020 GOTO1
+:tpitch=71.446 GOTO1
+:tpitch=72.687 GOTO1
+:tpitch=73.777 GOTO1
+:tpitch=74.741 GOTO1
+:tpitch=75.6 GOTO1
+:tpitch=76.368 GOTO1
+:tpitch=77.060 GOTO1
+:tpitch=77.686 GOTO1
+:tpitch=78.255 GOTO1
+// x=4.37 z=3.02
+// Credit to Devil4ngle#6170
+
+// WolframAlpha formula for ranging
+// 90-(arctan(4.37/(x+3.02))*180/π) where x = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]

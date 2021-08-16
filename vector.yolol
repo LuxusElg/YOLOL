@@ -5,5 +5,5 @@ s=SQRT(xv^2+yv^2+zv^2) :xu=(xv/s)*100 :xu-=(:xu%1)
 GOTO1
 
 // :xx :yy :zz from ISAN
-// :xu :yu :yz unit vector stored in memory chip (direction vector)
+// :xu :yu :zu unit vector stored in memory chip (direction vector)
 // :vector text panel

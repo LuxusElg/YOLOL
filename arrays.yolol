@@ -1,0 +1,5 @@
+// a-- removes last character in string abs
+// a-b removes last instance of b in a
+arr="abcdefghijklmnopqrstuvwxyz" it=0 len=26 
+IF it++<(len-:arrin) THEN arr-- GOTO2 END tmp=arr tmp-- res=arr-tmp
+:arrout=res GOTO1

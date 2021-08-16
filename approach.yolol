@@ -1,0 +1,3 @@
+r=:rfdist d=15 a=15 if 1-(r>1)*(r<500)*:Approach thengoto1end
+:FcuForward=(r>d)*(r-d)/a :FcuBackward=(r<d)*(-100*r/d+100) goto1
+// Credit Whitestrakes on OKIM Discord

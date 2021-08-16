@@ -1,0 +1,11 @@
+// example coord string:
+// "+0164238-0001646+0622733Rili Base 01   "
+IF :readStoredCoord<1 THEN GOTO3END
+// Grab comment 15 letters
+tmp=:storedCoord it=0 len=8+8+8+15 p="+"
+IF it++<(len-15) THENtmp-- GOTO6END c=:storedCoord-tmp len-=15 it=0
+// Grab coordinates
+IF it++<(len-8) THENtmp-- GOTO8END z=:storedCoord-tmp len-=8 it=0
+IF it++<(len-8) THENtmp-- GOTO9END y=:storedCoord-tmp len-=8 it=0
+IF it++<(len-8) THENtmp-- GOTO10END x=:storedCoord-tmp len-=8 it=0
+x-=p y-=p z-=p :xOut=x :yOut=y :zOut=z :wpName=c GOTO3

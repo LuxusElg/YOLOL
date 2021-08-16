@@ -1,0 +1,9 @@
+// storing numbers in bigger numbers
+// 4-digit coords with sign bits 1 1642 3 0016 1 62.27
+// 1164230016162.27
+// 211
+d1=100000000 d2=1000 d3=100 s=10000 in=:coordIn
+x=in/d1 x=x-x%1 in-=x*d1 xs=x/s xs=xs-xs%1 x-=xs*s x*=1-((xs>2)*2)
+y=in/d2 y=y-y%1 in-=y*d2 ys=y/s ys=ys-ys%1 y-=ys*s y*=1-((ys>2)*2)
+z=in*d3 zs=z/s zs=zs-zs%1 z-=zs*s z*=1-((zs>2)*2) :oX=x :oY=y :oZ=z
+GOTO4
