@@ -1,0 +1,4 @@
+x=0 y=0 z=0 k=1000
+IF(:xx==x)*(:yy==y)*(:zz==z) THEN GOTO2END
+:vx=(:xx-x)/k*k :vy=(:yy-y)/k*k :vz=(:zz-z)/k*k 
+x=:xx y=:yy z=:zz GOTO2

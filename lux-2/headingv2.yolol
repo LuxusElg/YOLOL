@@ -1,0 +1,13 @@
+:vx=120 :vy=0 :vz=-10
+p=3.142 b=0.571 c=57.295 h=180 n=97
+s1=(3/8) s2=(5/16) s3=(35/128) s4=(63/256)
+vx=:vx vy=:vy vz=:vz avx=ABS vx avz=ABS vz zn=(vz<0)
+s=SQRT(vx^2+vy^2+vz^2) dy=-(vy/s) IFvz==0 THENax=n GOTO7END
+e=avx/avz ax=(b*e+e*e)/(1+2*b*e+e*e)*c*(p/2) IFzn THENax=180-ax END
+f=dy+0.5*((dy^3)/3)+s1*(dy^5/5)+s2*(dy^7/7)+s3*(dy^9/9)+s4*(dy^11/11)
+:yaw=ax*(vx>0-vx<0) ay=f*h/p :pitch=-ay 
+GOTO3
+
+//f+=s4*(dy^11/11) // extra accuracy
+//f=x+.5(x^3/3)+(3/8)(x^5/5)+(5/16)(x^7/7)
+//+(35/128)(x^9/9)+(63/256)*(x^11/11)

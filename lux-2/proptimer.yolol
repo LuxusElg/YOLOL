@@ -1,0 +1,19 @@
+g=60 m=60 h=3600 k=1000 n="0" l=":" o=100 
+IF b<10 THEN b=n+b END IF c<10 THEN c=n+c END IF d<10 THEN d=n+d END
+:PropTime="Propellant:\n"+b+l+c+l+d GOTO3+(:prate>0.1)
+A=:pmax/:prate B=A/h/k*k C=A/m%m/k*k D=A%m/k*k GOTO2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

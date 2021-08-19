@@ -1,0 +1,6 @@
+p=3.142 b=0.571 c=57.295 b2=2*b
+:vx=:xx-x :vy=:yy-y :vz=:zz-z x=:xx y=:yy z=:zz
+s=SQRT(:vx^2+:vy^2+:vz^2) ux=:vx/s uy=:vy/s uz=:vz/s
+t=uy/uz pa=(b*t+t*t)/(1+b2*t+t*t)*c*(p/2) pat="Pitch: "+pa+"\n"
+t=ux/uz ya=(b*t+t*t)/(1+b2*t+t*t)*c*(p/2) :heading=pat+"Yaw: "+ya
+GOTO2
