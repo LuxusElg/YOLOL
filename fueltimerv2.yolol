@@ -1,0 +1,10 @@
+g=60 m=60 h=3600 k=1000 n="0" l=":" o=100
+S=:f1+:f2+:f3+:f4+:f5+:f6+:f7+:f8+:f9+:f10+:f11+:f12+:f13+:f14+:f15
+A=(S+:f6+:f17+:f18)/((:frate/o)*g*18) B=A/h/k*k C=A/m%m/k*k D=A%m/k*k 
+IF b<10 THEN b=n+b END IF c<10 THEN c=n+c END IF d<10 THEN d=n+d END 
+:FuelTime=b+l+c+l+d+" Remaining" GOTO2
+// :f1-:f18 Fuel Chambers 1-18 current fuel level
+// :frate Current Fuel Chamber Unit Rate
+// :FuelTime Output variable
+// Set g to 60 for t2, 135 for t1 FCs
+// If changing fuel chamber count, modify the 18 on line 3 to match

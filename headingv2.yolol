@@ -1,0 +1,19 @@
+x1=0 y1=0 z1=0
+x2=0 y2=10 z2=-10
+p=3.142 b=0.571 c=57.295 h=180 n=90
+vx=x2-x1 vy=y2-y1 vz=z2-z1 avx=ABS vx avy=ABS vy avz=ABS vz zn=vz<0
+eo=h*zn eo*=vx>0-vx<0 ro=h*zn ro*=vy>0-vy<0
+IFvz==0 THENax=n GOTO7END e=avx/avz ax=(b*e+e*e)/(1+2*b*e+e*e)*c*(p/2)
+IFvz==0 THENay=n GOTO8END r=avy/avz ay=(b*r+r*r)/(1+2*b*r+r*r)*c*(p/2)
+IFvz==0 THENay=n GOTO8END r=avy/avz ay=(b*r+r*r)/(1+2*b*r+r*r)*c*(p/2)
+
+ax+=oe :yaw=ax
+
+IFvz==0 THENax=n GOTO7END
+
+
+z2+=1 goto 3
+
+
+
+
