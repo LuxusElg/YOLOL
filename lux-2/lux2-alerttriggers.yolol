@@ -1,0 +1,19 @@
+f=5400000 fa=f*0.3 fc=f*0.1 p=:pmax pa=p*0.3 pc=p*0.1
+:a_sf=:unsafe :c_sf=:unsafe :a_tr=:trsp :c_tr=:trsp 
+:a_fr=:fsum<=fa :c_fr=:fsum<=fc :a_pr=:gnsr<=pa :c_pr=:gnsr<=pc GOTO2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

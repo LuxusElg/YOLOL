@@ -1,5 +1,19 @@
 t="\nPonder: " cr="\nCruise: " e="\nEco: " ct=:cruise
 IF:trsp THENts="On" ELSEts="Off"END IF:eco THENes="On" ELSEes="Off"END
-IFct<1 THENcs="On" ELSEcs="Off"END :unsafe=(:insideSafezone<1)
+IFct THENcs="On" ELSEcs="Off"END :unsafe=(:insideSafezone<1)
 IF:unsafe THEN s="NO!" ELSE s="Yes" END er="\nErrors: "
 :safe=s+cr+cs+e+es+t+ts+er+:errc GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+if:scan==0thengoto1 if:chk==1then:chck=0endend
+:chk=1 x=0 :found="" n="\n"
+if:sres==0thengoto1end
+ifx<:sres then:si=x :found+=:smat+": "+:svol/1728+n x++ goto4end
+:sreset=1 :scan=0 goto1
+
+
+
+
+
+
+
+
+
+
+
+
+
+

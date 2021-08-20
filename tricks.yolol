@@ -3,3 +3,11 @@ x/=:toggle // break when toggle==0
 goto :toggle+1 // skip first line when toggle is on
 p-=(p>45)*(p-45) // short max
 l+=(l<60)*(60-l) // short min
+
+// atan approx
+p=3.142 b=0.571 c=57.295
+t=:opposite/:adjacent :angle=(b*t+t*t)/(1+2*b*t+t*t)*c*(p/2) goto2
+
+// asin approx
+s1=(3/8) s2=(5/16) s3=(35/128) s4=(63/256)
+:o=:i+0.5*((:i^3)/3)+s1*(:i^5/5)+s2*(:i^7/7)+s3*(:i^9/9)+s4*(:i^11/11)

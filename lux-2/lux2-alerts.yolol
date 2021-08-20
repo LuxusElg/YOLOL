@@ -1,16 +1,16 @@
-fra=0 pra=0 sfa=0
-:l_fr=:a_fr IF:a_fr<1 THENfra=0 END IF:c_fr*(fra<1) THEN:f_fr=1 END
-IF :f_fr*(:l_fr<1) THEN :f_fr=0 fra=1 END
-:l_pr=:a_pr IF:a_pr<1 THENpra=0 END IF:c_pr*(pra<1) THEN:f_pr=1 END
-IF :f_pr*(:l_pr<1) THEN :f_pr=0 pra=1 END
-:l_sf=:a_sf IF:a_sf<1 THENsfa=0 END IF:c_sf*(sfa<1) THEN:f_sf=1 END
-IF :f_sf*(:l_sf<1) THEN :f_sf=0 sfa=1 END GOTO2
-
-
-
-
-
-
+fr_ack=0 pr_ack=0 sf_ack=0 tr_ack=0 a_sf=0 a_fr=0 a_pr=0 a_tr=0 
+if(:l_sf<1)*(a_sf<1)*:a_sf then:l_sf=1 a_sf=1end
+if(:l_sf<1)*a_sf then:l_sf=1 sf_ack=1end :f_sf=:c_sf*(sf_ack<1)
+if(:a_sf<1)*a_sf thena_sf=0 sf_ack=0 :l_sf=0end 
+if(:l_tr<1)*(a_tr<1)*:a_tr then:l_tr=1 a_tr=1end
+if(:l_tr<1)*a_tr then:l_tr=1 tr_ack=1end :f_tr=:c_tr*(tr_ack<1)
+if(:a_tr<1)*a_tr thena_tr=0 tr_ack=0 :l_tr=0end
+if(:l_fr<1)*(a_fr<1)*:a_fr then:l_fr=1 a_fr=1end
+if(:l_fr<1)*a_fr then:l_fr=1 fr_ack=1end :f_fr=:c_fr*(fr_ack<1)
+if(:a_fr<1)*a_fr thena_fr=0 fr_ack=0 :l_fr=0end
+if(:l_pr<1)*(a_pr<1)*:a_pr then:l_pr=1 a_pr=1end
+if(:l_pr<1)*a_pr then:l_pr=1 pr_ack=1end :f_pr=:c_pr*(pr_ack<1)
+if(:a_pr<1)*a_pr thena_pr=0 pr_ack=0 :l_pr=0end GOTO2
 
 
 

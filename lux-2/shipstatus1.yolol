@@ -1,4 +1,19 @@
-wc=:wcls IF:flowin THENin=" IN  " ELSEin="     " end
+wc=:wcls IF:flowin THENin="  IN " ELSEin="     " end
 IF:flowout THENout=" OUT " ELSEout="     " END
 fls=in+"|"+out
-:status="\nWarpClass: "+wc+"Flow: "+fls GOTO1
+:status="\nWarpClass: "+wc+"\nFlow:\n"+fls GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

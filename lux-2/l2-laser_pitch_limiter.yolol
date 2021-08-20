@@ -1,0 +1,19 @@
+IF:rf THEN a=:rfp a-=(a>70)*(a-70) :lt=a END GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

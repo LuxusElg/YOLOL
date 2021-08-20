@@ -1,2 +1,0 @@
-o=3.69 p=3.142 b=0.571 c=57.295 m=80 b2=2*b
-r=:rfd t=r/o a=(b*t+t*t)/(1+b2*t+t*t)*c*(p/2) :lt=90-a-a>m*(a-m) goto2

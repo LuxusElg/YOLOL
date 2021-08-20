@@ -1,0 +1,19 @@
+IF :lasers==0 THEN :lfire=0 GOTO1 END :lfire=0 GOTO2+:rf
+:lfire=1 GOTO1
+:lfire=(:rfd<=21) GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+k=1000 n="\n"
+p=:pitch/k*k y=:yaw/k*k 
+:heading="\nPitch: "+p+"\nYaw: "+y GOTO2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
