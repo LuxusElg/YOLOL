@@ -1,0 +1,20 @@
+h="WAYPT :I\n" e=0 e1="" e2="" wp=0 goto15
+i=0 if :wp_sh then goto4 end if :wp_ln then i=1 goto5 end goto2
+// Lux-2 Waypoint Edit Display - credit Barney#3632
+:wp_sh=0 if e>0 then e++ goto7+e end goto15
+:wp_ln=0 if e>2 and e<6 then v=:DED%1000000 o=1 end goto8+e
+:DED="INPUT ERROR" o=0 i=0 :i=h+"\n\n"+:DED goto8+e-1
+x=:x-:x%1 y=:y-:y%1 z=:z-:z%1 bx=x by=y bz=z i=0 goto9
+e=1 bn=n bx=x by=y bz=z e1="<--EDIT\n\nLOAD ISAN?\n\n\n\n" goto20
+if i then e=2 goto7 end n="Name:[....]" e1="<--EDIT" goto20
+if i then bn=:DED e=3 end n=bn x="[....]" goto20
+if i and o then bx=v e=4 end x=bx y="[....]" goto20
+if i and o then by=v e=5 end y=by z="[....]" goto20
+if i and o then bz=v e=6 end z=bz e2="\n  ->SAVE<-" goto20
+e1="" e2="" e=0 if i then goto16 end goto18
+:wpt=0 l=0 :i=h+"\n\nLOADING\n" goto17
+:wpt=-1 l=0 :i=h+"\n\nSAVING\n" :wpn=n :wpx=x :wpy=y :wpz=z
+l++ :i+="." if :wpt>0 then goto18 end if l>20 then goto19 end goto17
+wp=:wpt n=:wpn x=:wpx y=:wpy z=:wpz goto20
+:i=h+"\n\n  ERROR\nNO MEMORY FOUND" 
+:i=h+"WP-"+wp+e1+"\n"+n+"\nX:"+x+"\nY:"+y+"\nZ:"+z+e2 goto2

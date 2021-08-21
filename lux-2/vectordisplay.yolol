@@ -1,0 +1,20 @@
+k=100 x="\nWP X: " y="\nWP Y: " z="\nWP Z: " s="DISABLED"
+h="\nX: "+:vx/k*k+"\nY: "+:vy/k*k+"\nZ: "+:vz/k*k
+if:nstate>0 thenh+=x+:wx/k*k+y+:wy/k*k+z+:wz/k*k end
+:navvec=h goto2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Lux-2 Nav Vector Display
+// by LuxusElg - Copyleft 2021

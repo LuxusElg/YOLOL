@@ -1,0 +1,20 @@
+p=3.142 b=0.571 c=57.295 h=180 n=90 k=1000
+s1=(3/8) s2=(5/16) s3=(35/128) s4=(63/256)
+if:wpt<1thengoto3end wx=:wpx-:x wy=:wpy-:y wz=:wpz-:z
+s=sqrt(wx^2+wy^2+wz^2) :wx=wx/s :wy=wy/s :wz=wz/s :wpdist=s/k*k
+avx=abs :wx avz=abs :wz zn=:wz<0 dy=-(:wy/s) if:wz==0thenax=n goto7end
+e=avx/avz ax=(b*e+e*e)/(1+2*b*e+e*e)*c*(p/2) ifzn thenax=180-ax end
+f=dy+0.5*(dy^3/3)+s1*(dy^5/5)+s2*(dy^7/7)+s3*(dy^9/9)+s4*(dy^11/11)
+:wpyaw=ax*(:wx>0-:wx<0) ay=f*h/p :wppitch=-ay goto3
+
+
+
+
+
+
+
+
+
+
+// Lux-2 Waypoint Heading script
+// by LuxusElg - Copyleft 2021

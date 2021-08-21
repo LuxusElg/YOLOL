@@ -1,0 +1,20 @@
+k=:fcstate/1000*1000 :maintlight=k :frbz=:f_fr :prbz=:f_pr :sfbz=:f_sf
+:trbz=:f_tr GOTO1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Lux-2 Alert Speaker Script
+// by LuxusElg - Copyleft 2021

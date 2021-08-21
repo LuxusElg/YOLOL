@@ -1,7 +1,10 @@
 x=0 y=0 z=0 k=1000
 IF(:x==x)*(:y==y)*(:z==z) THEN GOTO2END
-:vx=(:x-x)/k*k :vy=(:y-y)/k*k :vz=(:z-z)/k*k 
-x=:x y=:y z=:z GOTO2
+vx=(:x-x)/k*k vy=(:y-y)/k*k vz=(:z-z)/k*k s=SQRT(vx^2+vy^2+vz^2)
+:vx=vx/s :vy=vy/s :vz=vz/s x=:x y=:y z=:z GOTO2
+
+// Requires current Coordinates :x,:y,:z
+// From ISAN or equivalent
 
 
 
@@ -13,7 +16,5 @@ x=:x y=:y z=:z GOTO2
 
 
 
-
-
-
-
+// Lux-2 Movement Vector Calculator
+// by LuxusElg - Copyleft 2021

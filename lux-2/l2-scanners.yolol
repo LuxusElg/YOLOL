@@ -1,19 +1,20 @@
-if:scan==0thengoto1 if:chk==1then:chck=0endend
+IF :scan==0 THEN GOTO1 IF :chk==1 THEN :chck=0 END END
 :chk=1 x=0 :found="" n="\n"
-if:sres==0thengoto1end
-ifx<:sres then:si=x :found+=:smat+": "+:svol/1728+n x++ goto4end
+IF :sres==0 THEN goto1 END
+IFx<:sres THEN:si=x :found+=:smat+": "+(:svol/1728)+n x++ GOTO4END
 :sreset=1 :scan=0 goto1
+// :scan - Button 1/0
+// :chk - "Scan" field on scanner
+// :found - Text panel for output
+// :sres - "ScanResults" field on scanner
+// :si - "Index" field on scanner
+// :smat - "Material" field on scanner
+// :svol - "Volume" field on scanner
+// :sreset - "Reset" field on scanner
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+// Lux-2 Scanner script
+// by LuxusElg - Copyleft 2021

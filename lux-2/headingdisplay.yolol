@@ -1,6 +1,7 @@
 k=1000 n="\n"
-p=:pitch/k*k y=:yaw/k*k 
-:heading="\nPitch: "+p+"\nYaw: "+y GOTO2
+p=:pitch/k*k y=:yaw/k*k wp=:wppitch/k*k wy=:wpyaw/k*k
+h="\nDir: "+y+"\nPitch: "+p w="\nWP D: "+wy+"\nWP P: "+wp
+IF:nstate>0 THENh+=w END :navdeg=h GOTO2
 
 
 
@@ -15,5 +16,5 @@ p=:pitch/k*k y=:yaw/k*k
 
 
 
-
-
+// Lux-2 Nav Degree Display
+// by LuxusElg - Copyleft 2021

@@ -1,0 +1,20 @@
+d="      DISABLED" m="m to "
+IF:nstate<0THEN:navstate=d ELSE:navstate=:wpdist+m+:wpn GOTO2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Lux-2 Nav State Display script
+// by LuxusElg - Copyleft 2021

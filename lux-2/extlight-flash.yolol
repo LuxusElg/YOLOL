@@ -1,0 +1,20 @@
+a=1
+:bckl1=(a>0)*:extlight :bckl2=(a<0)*:extlight
+
+:bckl1=(a<0)*:extlight :bckl2=(a>0)*:extlight a*=-1 GOTO2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Lux-2 External Light Flashing script
+// by LuxusElg - Copyleft 2021

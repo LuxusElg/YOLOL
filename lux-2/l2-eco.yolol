@@ -1,5 +1,9 @@
 c=10000 h=100 e=20 m=50
 b=:SBP l=(c-b)/(h+e*:ECO) l+=(:ECO<1)*(l<m)*(m-l) :FCURL=l+0.001 GOTO2
+// c - Battery capacity
+// h - Fuel Rate to Battery ratio, lower is faster climb
+// e - ECO mode adjust to ratio
+// m - Minimum Fuel Rate when not in ECO
 
 
 
@@ -12,8 +16,5 @@ b=:SBP l=(c-b)/(h+e*:ECO) l+=(:ECO<1)*(l<m)*(m-l) :FCURL=l+0.001 GOTO2
 
 
 
-
-
-
-
-
+// Lux-2 Fuel Economy Script
+// by LuxusElg - Copyleft 2021

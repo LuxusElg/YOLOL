@@ -1,0 +1,20 @@
+a=100000 b=10000 c=1000 d=100 e=10 wp=0 max=5
+:wpt=0 :wpn="NOT INIT" :wpx=0 :wpy=0 :wpz=0
+if :wpt==0 then wp++ goto4 end if :wpt==-1 then goto15 end goto3
+if wp>max then wp=1 end n=:wp1 x=:wp1c goto5+(wp>3)+(wp==1)*2
+if wp==2 then n=:wp2 x=:wp2c goto7 end n=:wp3 x=:wp3c goto7
+if wp==4 then n=:wp4 x=:wp4c goto7 end n=:wp5 x=:wp5c goto7
+y=x%(a*c) x=(x-y)/(a*c) s=x>2*b x=(x-b-b*s)*(1-2*s)*d z=y%c y=(y-z)/c
+s=y>2*b y=(y-b-b*s)*(1-2*s)*d s=z>2*d z=(z-d-d*s)*(1-2*s)*b j=1 goto20
+fx=ABS x/d fx=fx-fx%1+b*(1+x<0) fx*=a*c fy=ABS y/d
+fy=fy-fy%1+b*(1+y<0) fy*=c fz=ABS z/d fz=fz-fz%1+b*(1+z<0) fz*=0.01
+x=fx+fy+fz goto12+(wp>2)+(wp>4)
+if wp==1 then :wp1=n :wp1c=x goto4 end :wp2=n :wp2c=x goto4
+if wp==3 then :wp3=n :wp3c=x goto4 end :wp4=n :wp4c=x goto4
+:wp5=n :wp5c=x goto4
+n=:wpn x=:wpx%(a*e) y=:wpy%(a*e) z=:wpz%(a*e) goto9
+:DED="WP SAVE FORMAT ERROR" :wpt=wp goto3
+
+// Credit to Barney#3632
+// Lux-2 Waypoint Read/Write script
+:wpt=wp :wpn=n :wpx=x :wpy=y :wpz=z goto3

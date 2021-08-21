@@ -1,4 +1,6 @@
 p2=p1-:gnsr p1=:gnsr :prate=p2/4 // no goto, needs to cycle
+// Reads current GasNetworkStoredResource every 2 seconds
+// And subtracts from previous cycle to get propellant drain rate
 
 
 
@@ -14,6 +16,5 @@ p2=p1-:gnsr p1=:gnsr :prate=p2/4 // no goto, needs to cycle
 
 
 
-
-
-
+// Lux-2 Propellant Rate Calculator
+// by LuxusElg - Copyleft 2021
